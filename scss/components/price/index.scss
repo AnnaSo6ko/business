@@ -1,0 +1,95 @@
+main {
+    .price {
+        padding-top: 140px;
+        padding-bottom: 195px;
+        background: var(--background-light);
+        max-width: 1700px;
+        margin: 0 auto;
+        .container {
+            .row {
+                flex-direction: column;
+                .price__text {
+                    text-align: center;
+                    padding-bottom: 80px;
+                    h2 {
+                        font-size: $font-size-md;
+                        color: var(--text-color-grey);
+                    }
+                    span {
+                        color: #75888d;
+                        font-size: $font-size-xs;
+                        padding: 0 15px;
+                        display: block;
+                    }
+                } 
+                .price__section {
+                    display: flex;
+                    &_card {
+                        width: calc(100%/3);
+                        padding: 50px 30px;
+                        text-align: center;
+                        background: var(--background-white-color);
+                        height: 440px;
+                        border: solid;
+                        border-radius: 3px;
+                        border-color: #ccd5df;
+                        border-width: 1px;
+                        h2 {
+                            font-size: 18px;
+                            font-weight: 100;
+                            color: var(--text-color-grey);
+                        }
+                        p {
+                            font-size: 44px;
+                            color: var(--backgroung-orange);
+                            position: relative;
+                            margin-top: 13px;
+                        }
+                        .currency::before {
+                            content: "$";
+                            top: -3px;
+                            color: var(--backgroung-orange);
+                            font-size: 33px;
+                            position: absolute;
+                            left: 121px;
+                        }
+                        span {
+                            font-size: 10px;
+                            color: var(--text-color);
+                            display: block;
+                            padding: 5px;
+                        }
+                        .dark {
+                            color: var(--text-color-grey);
+                            padding-bottom: 20px;
+                        }
+                        hr {
+                            border: none;
+                            border-top: 1px solid #e2e9f0;
+                        }
+                        a {
+                            display: block;
+                            margin: 30px auto;
+                            width: 130px;
+                            padding: 15px 0;
+                            background: var(--backgroung-orange);
+                            border-radius: 3px;
+                            color: var(--text-white-color);
+                            font-size: $font-size-xs;
+                        }
+                    }
+                    &_card:hover {
+                        width: 395px;
+                        height: 485px;
+                        background: var(--background-blue);
+                        top: -22px;
+                        position: relative;
+                        h2,p,span,hr, .currency::before {
+                            color: var(--text-white-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

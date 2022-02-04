@@ -1,0 +1,44 @@
+main {
+    .map {
+        max-width: 1700px;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 55px;
+        .container {
+            height: 660px;
+            .map__img {
+                height: 660px;
+                img {
+                    margin: 0 auto;
+                    position: relative;
+                }
+                .address, .logo {
+                    top: -510px;
+                }
+                .map_img {
+                    height: 550px;
+                }
+            }
+            hr {
+                border: none;
+                border-top: 1px solid #e3e7ec;
+            }
+            .map__address {
+                position: relative;
+                top: -590px;
+                h5 {
+                    color: var(--text-white-color);
+                    font-weight: 500;
+                }
+                p {
+                    font-size: $font-size-xxs;
+                    color: #879397;
+                    padding-bottom: 13px;
+                }
+                a {
+                    color: #ffbb42;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,109 @@
+main {
+    .works {
+        max-width: 1700px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 150px 0;
+        .container {
+            .row {
+                justify-content: center;
+                .works__text {
+                    color: var(--text-color-grey);
+                    h2 {
+                        font-size: $font-size-md;
+                    }
+                    span {
+                        font-size: $font-size-xs;
+                    }
+                }
+                .works__item {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    &_step {
+                        margin: 0 45px;
+                        &_img {
+                            img {
+                                position: relative;
+                                margin: 0 auto;
+                                &.top {
+                                    top: 105px;
+                                }
+                                &.ctr1 {
+                                    position: relative;
+                                    top: -150px;
+                                    left: 91px;
+                                }
+                                &.line1 {
+                                    position: relative;
+                                    top: -179px;
+                                    left: 150px;
+                                }
+                                &.ctr2 {
+                                    position: relative;
+                                    top: -183px;
+                                    left: 208px;
+                                }
+                                &.ctr3 {
+                                    position: relative;
+                                    top: -45px;
+                                    left: 85px;
+                                }
+                                &.line2 {
+                                    position: relative;
+                                    top: -52px;
+                                    left: 146px;
+                                }
+                                &.ctr4 {
+                                    position: relative;
+                                    top: -85px;
+                                    left: 207px;
+                                }
+                                &.ctr5 {
+                                    position: relative;
+                                    top: -142px;
+                                    left: 93px;
+                                }
+                                &.line3 {
+                                    position: relative;
+                                    top: -172px;
+                                    left: 153px;
+                                }
+                                &.ctr6 {
+                                    position: relative;
+                                    top: -177px;
+                                    left: 211px;
+                                }
+                            }
+                        }
+                        &_text {
+                            padding-top: 15px;
+                            h4 {
+                                font-size: 17px;
+                                font-weight: 400;
+                                color: #394b50;
+                            }
+                            p {
+                                padding-top: 30px;
+                                font-size: $font-size-xxs;
+                                color: var(--text-color);
+                            }
+                        }
+                    }
+                }
+                .works__navigation {
+                    a {
+                        display: block;
+                        margin: 90px auto 0;
+                        width: 165px;
+                        padding: 15px 0;
+                        background: var(--backgroung-orange);
+                        border-radius: 3px;
+                        color: var(--text-white-color);
+                        font-size: $font-size-xs;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+main {
+    .newsletter {
+        max-width: 1700px;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 155px;
+        .container {
+            .row {
+                flex-direction: column;
+                align-content: center;
+                div.newsletter__text {
+                    text-align: center;
+                    color: var(--text-color-grey);
+                    margin-bottom: 40px;
+                    h2 {
+                        font-size: $font-size-md;
+                    }
+                    span {
+                        font-size: $font-size-xs;
+                    }
+                }
+                .newsletter__contact {
+                    margin-bottom: 50px;
+                    &_form {
+                        display: flex;
+                        &_name {
+                            margin: 0 5px;
+                            input {
+                                width: 305px;
+                                height: 47px;
+                                border-radius: 3px;
+                                border-color: #cbcbcb;
+                                border-style: solid;
+                            }
+                            &_input {
+                                background-image: url(./../images/cont.jpg);
+                                background-position: left;
+                                background-size: 30px;
+                                background-repeat: no-repeat;
+                                padding-left: 35px;
+                            }
+                        }
+                        &_email {
+                            margin: 0 5px;
+                            input {
+                                width: 390px;
+                                height: 47px;
+                                border-radius: 3px;
+                                border-color: #cbcbcb;
+                                border-style: solid;
+                            }
+                            &_input {
+                                background-image: url(./../images/lllk.jpg);
+                                background-position: left;
+                                background-size: 28px;
+                                background-repeat: no-repeat;
+                                padding-left: 35px;
+                            }
+                        }
+                        button {
+                            width: 218px;
+                            height: 47px;
+                            background: var(--backgroung-orange);
+                            border-radius: 3px;
+                            color: var(--text-white-color);
+                            border: none;
+                            margin: 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

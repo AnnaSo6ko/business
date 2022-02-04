@@ -1,0 +1,52 @@
+footer {
+    .container {
+        .footer__social {
+            padding-top: 5px;
+            ul {
+                display: flex;
+                justify-content: center;
+                li {  
+                    a {
+                        position: relative;
+                        display: block;
+                        width: 2.5rem;
+                        height: 2.5rem;
+                    }
+                    a::before {
+                        content: "";
+                        position: absolute;
+                        width: 1.2rem;
+                        height: 1.2rem;
+                        left: .65rem;
+                        top: .65rem;
+                        background: transparent no-repeat center center;
+                        background-size: 100% 100%;
+                    }
+                    .twitter::before {
+                        background-image: url(./../images/pt.png);
+                    }
+                    .facebook::before {
+                        background-image: url(./../images/f.png);
+                    }
+                    .google::before {
+                        background-image: url(./../images/g.png);
+                    }
+                    .linkedin::before {
+                        background-image: url(./../images/in.png);   
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        background: var(--background-blue);
+        padding: 15px;
+        text-align: center;
+        margin-top: 40px;
+        p {
+            color: var(--text-white-color);
+            font-size: $font-size-xxs; 
+            padding: 10px 40px;
+        }
+    }
+}

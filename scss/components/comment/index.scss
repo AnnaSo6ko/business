@@ -1,0 +1,85 @@
+main {
+    .comment {
+        max-width: 1700px;
+        text-align: center;
+        margin: 0 auto;
+        background: var(--backgroung-orange);
+        padding: 140px 0 160px;
+        .container {
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                .comment__text {
+                    color: var(--text-white-color);
+                    h2 {
+                        font-size: $font-size-md;
+                    }
+                    span {
+                        font-size: $font-size-xs;
+                    }
+                }
+                .comment__clients {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-top: 60px;
+                    &_squares {
+                        max-width: 50%;
+                        width: 570px;
+                        height: 240px;
+                        display: flex;
+                        background: var(--background-white-color);
+                        margin-bottom: 20px;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 3px;
+                        &_review {
+                            padding-left: 25px;
+                            max-width: 345px;
+                            text-align: justify;
+                            blockquote {
+                                font-size: 13px;
+                                color: #7b7b7b;
+                                position: relative;
+                                p {
+                                    padding-left: 25px;
+                                    margin: 0;
+                                }
+                            }
+                            blockquote::before {
+                             content: "";
+                             position: relative;
+                             background-image: url(./../images/copy1.png);
+                             background-position: top;
+                             background-size: 10px;
+                             background-repeat: no-repeat;
+                             padding-left: 27px;
+                             top: 20px;
+                            }
+                            blockquote::after {
+                             content: "";
+                             position: relative;
+                             background-image: url(./../images/copy2.png);
+                             background-position: bottom;
+                             background-size: 10px;
+                             background-repeat: no-repeat;
+                             padding-left: 274px;
+                             top: -18px;
+                            }
+                            p {
+                                font-size: $font-size-sm;
+                                margin-top: 10px;
+                                color: var(--text-color);
+                                padding-left: 25px;
+                                span {
+                                    color: #f78948;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

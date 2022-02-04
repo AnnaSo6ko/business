@@ -1,0 +1,28 @@
+header {
+    div.logo {
+        float: left;
+    }
+    img {
+        width: 50px;
+        height: 48px;
+        margin: 10px auto;
+    } 
+    menu {
+        float: right;
+        display: flex;
+        li {
+            padding: 12px 20px;
+            font-size: $font-size-xxs;
+        }
+        li.active {
+            background-color: var(--backgroung-orange);
+            border-radius: 3px;
+        }
+        a {
+            color: var(--text-color);
+        } 
+        a.active {
+            color: var(--text-white-color);
+        }
+    }
+}
